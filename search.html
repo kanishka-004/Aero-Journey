@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body{
+        background-image: url('plane img.webp');
+        background-size: cover;
+        background-position: center;
+        
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Journey Junction</h1>
+        <nav class="navbar">
+            <ul class="one-group">
+                <li class="one active"><a href="index.html">Home</a></li>
+                <li class="one"><a href="search.html"> Flight Search </a></li>
+                <li class="one"><a href="book.html">Book Ticket</a></li>
+                <li class="one"><a href="confirmation.html">Booking Confirmation</a></li>
+                <li class="one"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+         
+        <h2> Flight Search</h2>
+        <form id="searchForm">
+            <label for="from">From:</label>
+            <input type="text" id="from" name="from" required>
+            <label for="to">To:</label>
+            <input type="text" id="to" name="to" required>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="results"></div>
+    </main>
+    <footer>
+        <p>AirVoyage</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
